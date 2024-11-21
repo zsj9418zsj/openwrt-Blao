@@ -1,5 +1,5 @@
 # 修改默认IP & 固件名称
-sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.3.18/g' package/base-files/files/bin/config_generate
 sed -i "s/hostname='.*'/hostname='JDCAX1800'/g" package/base-files/files/bin/config_generate
 
 # 修改亚瑟运行LED为绿色
