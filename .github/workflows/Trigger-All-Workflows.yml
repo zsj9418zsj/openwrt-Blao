@@ -15,8 +15,8 @@ jobs:
     Arthur-Athena-Stable:
      uses: ./.github/workflows/Arthur&Athena-Stable(24.10).yml
 
-    Taiyi-Master-B:
-     uses: ./.github/workflows/Taiyi-Master(B).yml
+   # Taiyi-Master-B:
+    # uses: ./.github/workflows/Taiyi-Master(B).yml
 
    # Taiyi-Master-V:
     # uses: ./.github/workflows/Taiyi-Master(V).yml
