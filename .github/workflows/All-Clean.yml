@@ -1,0 +1,27 @@
+name: All-Clean
+
+on:
+  workflow_dispatch:
+  workflow_call:
+  # schedule:
+  #   - cron: 0 3 * * 1
+
+jobs:
+  Cleaning:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: Delete Old Workflows
+      uses: Mattraks/delete-workflow-runs@main
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        retain_days: 2
+        keep_minimum_runs: 0
+
+    - name: Delete Old Releases
+      uses: dev-drprasad/delete-older-releases@master
+      with:
+        keep_latest: 8
+        delete_tags: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

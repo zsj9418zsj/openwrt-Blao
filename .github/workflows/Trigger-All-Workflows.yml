@@ -1,0 +1,31 @@
+name: Trigger-All-Workflows  # 主要工作流的名称
+
+on:
+  workflow_dispatch:  # 手动触发：通过 GitHub UI 来触发
+  schedule:
+     - cron: 0 20 * * *  # 北京时间凌晨4点，定时触发
+
+jobs:
+    Arthur-Athena-Master-B:
+     uses: ./.github/workflows/Arthur&Athena-Master(B).yml
+
+    Arthur-Athena-Master-V:
+     uses: ./.github/workflows/Arthur&Athena-Master(V).yml
+
+    Arthur-Athena-Stable:
+     uses: ./.github/workflows/Arthur&Athena-Stable(24.10).yml
+
+    Taiyi-Master-B:
+     uses: ./.github/workflows/Taiyi-Master(B).yml
+
+    Taiyi-Master-V:
+     uses: ./.github/workflows/Taiyi-Master(V).yml
+
+    Taiyi-Stable:
+     uses: ./.github/workflows/Taiyi-Stable(24.10).yml
+
+    All-Base:
+     uses: ./.github/workflows/All-Base.yml
+
+    All-Clean:
+     uses: ./.github/workflows/All-Clean.yml
