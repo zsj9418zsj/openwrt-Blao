@@ -3,7 +3,7 @@ name: Trigger-All-Workflows  # 主要工作流的名称
 on:
   workflow_dispatch:  # 手动触发：通过 GitHub UI 来触发
   schedule:
-     - cron: 0 18 * * *  # 北京时间凌晨4点，定时触发
+     - cron: 0 18 * * *  # 北京时间凌晨2点，定时触发
 
 jobs:
     Arthur-Athena-Master-B:
