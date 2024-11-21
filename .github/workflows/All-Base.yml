@@ -171,7 +171,7 @@ jobs:
         artifacts: ${{ env.FIRMWARE_PATH }}/*
         body: |
           **This is OpenWrt Firmware for ${{ env.FIRMWARE_TAG }}** (刷机底包！)
-          ### 📒 固件信息(无WIFI)
+          ### 📒 固件信息
           - 这是刷机底包，为了防止固件过大刷不进去，以及刷进去了软件包默认有占用，最好先使用刷机底包刷机；再在LuCI界面刷大固件，此时会弹出红色警告对话框，这是正常现象！雅典娜启动缓慢，通常需要3-4分钟，指示灯会循环3次左右，并非反复重启，这也是正常现象！
           - 💻 这是 ${{ env.FIRMWARE_TAG }} 平台使用的 OpenWrt 固件
           - ⚽ 固件源码: ${{ env.REPO_URL }}
