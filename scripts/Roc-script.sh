@@ -31,6 +31,7 @@ git_sparse_clone main https://github.com/kenzok8/small-package adguardhome luci-
 git_sparse_clone master https://github.com/immortalwrt/packages net/ariang 
 git clone --depth=1 https://github.com/lwb1978/openwrt-gecoosac package/openwrt-gecoosac
 git clone --depth=1 https://github.com/gdy666/luci-app-lucky package/lucky
+git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
 git clone --depth=1 https://github.com/NONGFAH/luci-app-athena-led package/luci-app-athena-led
 chmod +x package/luci-app-athena-led/root/etc/init.d/athena_led
 chmod +x package/luci-app-athena-led/root/usr/sbin/athena-led
