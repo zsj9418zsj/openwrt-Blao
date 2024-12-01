@@ -26,6 +26,7 @@ function git_sparse_clone() {
 }
 
 # Alist & AdGuardHome & 集客无线AC控制器 & Lucky & AriaNg & 雅典娜LED控制
+git clone https://github.com/gngpp/luci-app-watchcat-plus.git package/luci-app-watchcat-plus
 git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-alist
 git_sparse_clone main https://github.com/kenzok8/small-package adguardhome luci-app-adguardhome
 git_sparse_clone main https://github.com/VIKINGYFY/packages luci-app-wolplus
